@@ -3,7 +3,7 @@ import TodoItems from './TodoItems';
 import todo_icon from '../assets/todo_icon.png';
 
 function Todo() {
-    const [todoList, setTodoList] = useState(localStorage.getItem("todos") ? JSON.parse(localStorage.getItem("todos")) : []);
+    const [todoList, setTodoList] = useState(lsocalStorage.getItem("todos") ? JSON.parse(localStorage.getItem("todos")) : []);
     const [deleteId, setDeleteId] = useState(null); 
     const inputRef = useRef();
 
